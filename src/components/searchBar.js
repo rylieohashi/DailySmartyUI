@@ -31,6 +31,6 @@ SearchBar = reduxForm({
     form: 'searchBar'
 })(SearchBar);
 
-SearchBar = withRouter(SearchBar); //withRouter is just high order component that's been created by RRdom. export function with router
+SearchBar = withRouter(SearchBar); //withRouter is just a high order component (HOC) that's been created by RRdom. export function with router
 
 export default SearchBar;
