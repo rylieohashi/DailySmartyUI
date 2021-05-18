@@ -8,13 +8,13 @@ const INIT_STATE = {
 }
 
 export default function(state = INIT_STATE, action) {
-    switch (action, type )//switch statement. can hit down arrow key when typing and then enter for skeleton
-        
-    {
+    switch (action.type) { //switch statement. can hit down arrow key when typing and then enter for skeleton
         case SET_RECENT_POSTS:
-            
-            return [...state, recentPosts: action.payload];
-    
+            const recentPosts = action.payload;
+            return {
+                ...state, 
+                recentPosts
+            }
         default:
             return state;
     }
